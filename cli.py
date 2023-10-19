@@ -118,7 +118,7 @@ def cli():
         print("1. All")
         print("2. Period")
         print("3. Longest current streak")
-        print("4. Longest streak")
+        print("4. Longest all time streak")
         print("5. Cost")
         print("6. Money saved")
         print("7. Return to main menu")

@@ -258,6 +258,6 @@ class Habit:
         print(sorted_df)
 
 
-habit1 = Habit("yes",1, 10)
+
 
 
