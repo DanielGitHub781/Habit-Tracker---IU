@@ -1,1 +1,52 @@
-[]
+[
+        {
+                "Name": "take vitamin d",
+                "Period in days": 1,
+                "Current streak length": 62,
+                "Longest streak": 62,
+                "Cost in euro": 0,
+                "Money saved in euro": 0,
+                "Start date": "2023-08-20",
+                "Last checked": "2023-10-21"
+        },
+        {
+                "Name": "go to the gym",
+                "Period in days": 7,
+                "Current streak length": 8,
+                "Longest streak": 8,
+                "Cost in euro": 0,
+                "Money saved in euro": 0,
+                "Start date": "2023-09-04",
+                "Last checked": "2023-10-17"
+        },
+        {
+                "Name": "feed the cat",
+                "Period in days": 1,
+                "Current streak length": 51,
+                "Longest streak": 51,
+                "Cost in euro": 0,
+                "Money saved in euro": 0,
+                "Start date": "2023-09-01",
+                "Last checked": "2023-10-21"
+        },
+        {
+                "Name": "stop smoking",
+                "Period in days": 1,
+                "Current streak length": 0,
+                "Longest streak": 21,
+                "Cost in euro": 5,
+                "Money saved in euro": 105,
+                "Start date": "2023-09-18",
+                "Last checked": "2023-10-09"
+        },
+        {
+                "Name": "brush teeth",
+                "Period in days": 1,
+                "Current streak length": 62,
+                "Longest streak": 62,
+                "Cost in euro": 0,
+                "Money saved in euro": 0,
+                "Start date": "2023-08-20",
+                "Last checked": "2023-10-21"
+        }
+]
