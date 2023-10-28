@@ -42,7 +42,7 @@ class Habit:
         # Check if there are duplicates in the file and stop execution if there are duplicates
         for duplicates in data_list:
             if duplicates.get("Name") == self.name:
-                print("Please enter a new habit name that is not already existing.")
+                print("Please enter a new habit name that does not already exist.")
                 return  
         # Append the habit to the json file
         data_list.append(data)
@@ -58,7 +58,7 @@ class Habit:
 
         with open("habit_data.json", "r") as file:
             data = json.load(file)
-        # Check if the habit that should be delted is in the file
+        # Check if the habit that should be deleted is in the file
         matching_habits = [name for name in data if name.get("Name") == del_habit_name]
 
         if not matching_habits:
@@ -77,7 +77,7 @@ class Habit:
     def edit_habit_name(self, old_habit_name, new_habit_name):
         with open("habit_data.json", "r") as file:
             data = json.load(file)
-        # Check if the habit that should be delted is in the file
+        # Check if the habit that should be deleted is in the file
         matching_habits_old = [habit for habit in data if habit.get("Name") == old_habit_name]
 
         if not matching_habits_old:
@@ -173,7 +173,7 @@ class Habit:
             """
             Get the date of when the habit was last checked and convert
             it into format from which it can be calculated. Calculate the
-            diffrence between today and the last time the habit was checked.
+            difference between today and the last time the habit was checked.
             """
             last_checked_date = searched_habit['Last checked']
             
@@ -194,7 +194,7 @@ class Habit:
                     for habit in check_off:
                         # Find the habit 
                         if habit["Name"] == habit_name:
-                            # Increase the current sreak length by one
+                            # Increase the current streak length by one
                             habit["Current streak length"] += 1
                             # Add the Cost of the habit to the total money saved
                             habit["Money saved in euro"] += habit["Cost in euro"]
@@ -203,7 +203,7 @@ class Habit:
                     for habit in check_off:
                         # Find the habit
                         if habit["Name"] == habit_name:
-                            # Set the current sreak length to one
+                            # Set the current streak length to one
                             habit["Current streak length"] = 1
                             # Add the Cost of the habit to the total money saved
                             habit["Money saved in euro"] += habit["Cost in euro"]
@@ -219,16 +219,16 @@ class Habit:
                     for habit in check_off:
                         # Find the habit 
                         if habit["Name"] == habit_name:
-                            # Increase the current sreak length by one
+                            # Increase the current streak length by one
                             habit["Current streak length"] += 1
                             # Add the Cost of the habit to the total money saved
                             habit["Money saved in euro"] += habit["Cost in euro"]
-                # Chosen if it was last checked later then a week ago           
+                # Chosen if it was last checked later than a week ago           
                 elif total_days_as_int > 14:
                     for habit in check_off:
                         # Find the habit 
                         if habit["Name"] == habit_name:
-                            # Set the current sreak length to one
+                            # Set the current streak length to one
                             habit["Current streak length"] = 1
                             # Add the Cost of the habit to the total money saved
                             habit["Money saved in euro"] += habit["Cost in euro"]
@@ -237,7 +237,7 @@ class Habit:
                     print("You have already checked the habit.")
                     return
 
-            # Update the Longest streak lenght if the Current streak length is larger
+            # Update the Longest streak length if the Current streak length is larger
             for habit in check_off:
                 if habit["Current streak length"] > habit["Longest streak"]:
                     for habit in check_off:
@@ -262,13 +262,17 @@ class Habit:
         df = pd.read_json('habit_data.json')
         print(df.to_string())
 
-    # Display the habits in a table. Sort them based on their periodicities
+    # Display the habits in two tables. Sort them based on their periodicities
     def display_all_habits_periodicity(self):
 
         df = pd.read_json('habit_data.json')
-        sorted_df = df.sort_values(by = "Period in days", ascending = True)
-        print(sorted_df)
 
+        grouped = df.groupby("Period in days")
+
+        for group, group in grouped:
+            print(group.to_string())
+            print()
+    
     # Display the habits in a table. Sort them based on their longest current streak lengths
     def display_all_habits_longest_current_streak(self):
 
@@ -296,6 +300,3 @@ class Habit:
         df = pd.read_json('habit_data.json')
         sorted_df = df.sort_values(by = "Money saved in euro", ascending = False)
         print(sorted_df)
-
-
-

@@ -12,7 +12,7 @@
 
 Welcome to my habit tracker.
 
-This *habit tracker* is a project I have done as a student for the IU International University of Applied Sciences. Here you can create, delete, check and analyse your habits. One of the hardest things when trying to establish good habit is, is having enough motivation to keep going. Thats why the habit tracker has a system set in place with whom you can track how many times in a row you have completed the habit and how much money you have saved, when for example you want to stop smoking.
+This *habit tracker* is a project I have done as a student for the IU International University of Applied Sciences. Here you can create, delete, check, and analyse your habits. One of the hardest things when trying to establish good habit is, is having enough motivation to keep going. Thats why the habit tracker has a system set in place with whom you can track how many times in a row you have completed the habit and how much money you have saved, when for example you want to stop smoking.
 
 ## Features
 With the habit tracker you are able too:
@@ -40,13 +40,13 @@ With the habit tracker you are able too:
 
 1. Open your Terminal/Command window
 2. Check if Python 3.8 or later is installed
-    Check the cureent version by typing:
+    Check the current version by typing:
     
     ```
    python --version
    ```
 
-3. Check if you have the latest pip version intalled:
+3. Check if you have the latest pip version installed:
 
     Upgrade pip by typing in:
 
@@ -55,7 +55,7 @@ With the habit tracker you are able too:
    ```
 
 4. Download the habit tracker folder and open him using your Terminal
-5. Now you have to install the requirements:
+5. Now you must install the requirements:
 
     Install them by typing in:
     ```
@@ -64,7 +64,7 @@ With the habit tracker you are able too:
 
 ## Usage
 
-After the Installation the programm can be run by typing 
+After the Installation, the program can be run by typing 
 
 ```
 python3 cli.py  
@@ -76,7 +76,7 @@ After that a menu should appear, you can then interact with the habit tracker by
 ## Packages and modules
 
 - Datetime: Used for checking the habit off.
-- Json: Saving habits in a file for later use beetwen sesions.
+- Json: Saving habits in a file for later use between sessions.
 - Pandas: Displaying data in tables.
 - Unittest: Testing the Habit tracker.
 
@@ -84,7 +84,7 @@ After that a menu should appear, you can then interact with the habit tracker by
 
 
 
-Testing is important when using the Habit tracker it ensures that every function is running like it should be. To run a test you have to type in:
+Testing is important when using the Habit tracker, it ensures that every function is running like it should be. To run a test, you must type in:
 
 ```
 python3 -m pytest .

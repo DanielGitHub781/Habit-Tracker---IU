@@ -33,7 +33,7 @@ class testhabit(unittest.TestCase):
                 found = True
                 break
 
-        # Check if the operation was succesful
+        # Check if the operation was successful
         self.assertTrue(found)
             
 
@@ -58,14 +58,14 @@ class testhabit(unittest.TestCase):
         with open("habit_data.json", "r") as file:
             saved_data = json.load(file)
         
-        # Look if the test_habit can not be found in the json file
+        # Look if the test_habit cannot be found in the json file
         found = True
         for item in saved_data:
             if item == test_habit:
                 found = False
                 break
 
-        # Check if the operation was succesful
+        # Check if the operation was successful
         self.assertTrue(found)
 
 
@@ -92,14 +92,14 @@ class testhabit(unittest.TestCase):
         with open("habit_data.json", "r") as file:
             saved_data = json.load(file)
 
-        # Look if the edited test_habit can not be found in the json file
+        # Look if the edited test_habit cannot be found in the json file
         found = False
         for item in saved_data:
             if item == test_habit:
                 found = True
                 break
             
-        # Check if the operation was succesful
+        # Check if the operation was successful
         self.assertTrue(found)
 
         # Delete the test habit from the json file
@@ -128,14 +128,14 @@ class testhabit(unittest.TestCase):
         with open("habit_data.json", "r") as file:
             saved_data = json.load(file)
 
-        # Look if the edited test_habit can not be found in the json file  
+        # Look if the edited test_habit cannot be found in the json file  
         found = False
         for item in saved_data:
             if item == test_habit:
                 found = True
                 break
 
-        # Check if the operation was succesful
+        # Check if the operation was successful
         self.assertTrue(found)
 
         # Delete the test habit from the json file
@@ -164,14 +164,14 @@ class testhabit(unittest.TestCase):
         with open("habit_data.json", "r") as file:
             saved_data = json.load(file)
 
-        # Look if the edited test_habit can not be found in the json file
+        # Look if the edited test_habit cannot be found in the json file
         found = False
         for item in saved_data:
             if item == test_habit:
                 found = True
                 break  
         
-        # Check if the operation was succesful
+        # Check if the operation was successful
         self.assertTrue(found)
 
         # Delete the test habit from the json file
@@ -200,14 +200,14 @@ class testhabit(unittest.TestCase):
         with open("habit_data.json", "r") as file:
             saved_data = json.load(file)
 
-        # Look if the checked test_habit can not be found in the json file
+        # Look if the checked test_habit cannot be found in the json file
         found = False
         for item in saved_data:
             if item == test_habit:
                 found = True
                 break
 
-        # Check if the operation was succesful
+        # Check if the operation was successful
         self.assertTrue(found)
 
         # Delete the test habit from the json file

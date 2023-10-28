@@ -145,7 +145,7 @@ def cli():
             Habit.display_all_habits(number_analyses)
             print("")
             cli()
-        # Sorted by periodicity
+        # Sorted by periodicity and displayed in two tables
         elif number_analyses == 2:
             Habit.display_all_habits_periodicity(number_analyses)
             print("")
@@ -179,11 +179,11 @@ def cli():
     # Explanation of the functions
     elif number == 6:
         print("")
-        print("Here is the explenation of every function you have in the main menu:")
+        print("Here is the explanation of every function you have in the main menu:")
         print("1. Create a habit using where you can choose the name, period (daily or weekly) and the cost of the habit.")
-        print("2. Delete a habit you have formaly created or that ones that have been created for you.")
-        print("3. Change a habits name, period or cost.")
-        print("4. Check off an habit and increase your streak.")
+        print("2. Delete a habit you have formally created or that ones that have been created for you.")
+        print("3. Change a habits name, period, or cost.")
+        print("4. Check off a habit and increase your streak.")
         print("5. Display your habits in a table, you can also sort them by multiple parameters.")
         print("6. Get help if you do not understand the functions.")
         print("7. Exit the habit tracker.")
@@ -196,7 +196,7 @@ def cli():
 
 
     else:
-        print("Invaild input. Try again.")
+        print("Invalid input. Try again.")
         cli()
     
 if __name__ == "__main__":
